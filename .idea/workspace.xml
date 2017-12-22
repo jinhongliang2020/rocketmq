@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="057e891f-98f2-48f7-8c43-11d661368471" name="Default" comment="" />
+    <list default="true" id="057e891f-98f2-48f7-8c43-11d661368471" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -28,7 +30,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Consumer.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Consumer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/rocketmqAPI/src/wxd/mq/quickstart/Consumer.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="333">
@@ -36,6 +38,16 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="10" lean-forward="true" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -62,6 +74,7 @@
       <list>
         <option value="$PROJECT_DIR$/rocketmqAPI/src/wxd/mq/quickstart/Producer.java" />
         <option value="$PROJECT_DIR$/rocketmqAPI/src/wxd/mq/quickstart/Consumer.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -81,8 +94,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="738" />
-    <option name="y" value="209" />
+    <option name="x" value="653" />
+    <option name="y" value="116" />
     <option name="width" value="1035" />
     <option name="height" value="815" />
   </component>
@@ -178,6 +191,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\IdeaProject\rocketmq" />
       <recent name="E:\IdeaProject\rocketmq\lib" />
     </key>
   </component>
@@ -635,15 +649,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1513909656441</updated>
-      <workItem from="1513909661394" duration="14399000" />
+      <workItem from="1513909661394" duration="14764000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14399000" />
+    <option name="totallyTimeSpent" value="14764000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="738" y="209" width="1035" height="815" extended-state="0" />
+    <frame x="653" y="116" width="1035" height="815" extended-state="0" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -745,6 +759,14 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="10" lean-forward="true" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
+          <folding />
         </state>
       </provider>
     </entry>
