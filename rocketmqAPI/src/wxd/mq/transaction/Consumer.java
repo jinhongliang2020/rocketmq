@@ -11,7 +11,7 @@ import java.util.List;
 
 public class Consumer {
     public static void main(String[] args) throws MQClientException {
-        DefaultMQPushConsumer consumer = new DefaultMQPushConsumer("transaction_producer");
+        DefaultMQPushConsumer consumer = new DefaultMQPushConsumer("transaction_consumer");
         consumer.setNamesrvAddr("192.168.0.121:9876;192.168.0.122:9876");
         consumer.subscribe("TopicTransaction","*");
 
