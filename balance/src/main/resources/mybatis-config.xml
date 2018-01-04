@@ -37,7 +37,7 @@
     </settings>
 
     <typeAliases>
-        <typeAlias type="bhz.entity.Pay" alias="Pay"/>
+        <typeAlias type="bhz.entity.Balance" alias="Balance"/>
     </typeAliases>
     <plugins>
         <plugin interceptor="com.github.miemiedev.mybatis.paginator.OffsetLimitInterceptor">

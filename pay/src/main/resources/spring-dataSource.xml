@@ -54,7 +54,7 @@
         <property name="dataSource" ref="dataSource" />
         <property name="configLocation" value="classpath:mybatis-config.xml" />
         <!-- 自动扫描entity目录, 省掉Configuration.xml里的手工配置 -->
-        <property name="mapperLocations" value="classpath:bhz/mapper/*.xml" />
+        <property name="mapperLocations" value="classpath:mapper/*.xml" />
     </bean>
 
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
@@ -74,20 +74,20 @@
 
 
     <!-- 配置druid监控spring jdbc -->
-    <bean id="druid-stat-interceptor"
-          class="com.alibaba.druid.support.spring.stat.DruidStatInterceptor">
-    </bean>
-    <bean id="druid-stat-pointcut" class="org.springframework.aop.support.JdkRegexpMethodPointcut" scope="prototype">
-        <property name="patterns">
-            <list>
-                <value>bhz.service.PayService</value>
-            </list>
-        </property>
-    </bean>
+    <!--<bean id="druid-stat-interceptor"-->
+          <!--class="com.alibaba.druid.support.spring.stat.DruidStatInterceptor">-->
+    <!--</bean>-->
+    <!--<bean id="druid-stat-pointcut" class="org.springframework.aop.support.JdkRegexpMethodPointcut" scope="prototype">-->
+        <!--<property name="patterns">-->
+            <!--<list>-->
+                <!--<value>bhz.service.PayService</value>-->
+            <!--</list>-->
+        <!--</property>-->
+    <!--</bean>-->
 
-    <aop:config proxy-target-class="true">
-        <aop:advisor advice-ref="druid-stat-interceptor"
-                     pointcut-ref="druid-stat-pointcut" />
-    </aop:config>
+    <!--<aop:config proxy-target-class="true">-->
+        <!--<aop:advisor advice-ref="druid-stat-interceptor"-->
+                     <!--pointcut-ref="druid-stat-pointcut" />-->
+    <!--</aop:config>-->
 
 </beans>

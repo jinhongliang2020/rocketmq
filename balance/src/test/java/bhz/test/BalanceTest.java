@@ -1,4 +1,4 @@
-package java.bhz.test;
+package bhz.test;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 

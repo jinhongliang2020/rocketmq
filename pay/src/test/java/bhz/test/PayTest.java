@@ -1,4 +1,4 @@
-package java.bhz.test;
+package bhz.test;
 
 import bhz.mq.MQProducer;
 import bhz.util.FastJsonConvert;

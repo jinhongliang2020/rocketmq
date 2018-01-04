@@ -23,6 +23,7 @@ public class MQProducer {
 		this.producer.setCheckThreadPoolMinSize(5);	// 事务回查最小并发数
 		this.producer.setCheckThreadPoolMaxSize(20);	// 事务回查最大并发数
 		this.producer.setCheckRequestHoldMax(2000);	// 队列数
+
 		//服务器回调Producer，检查本地事务分支成功还是失败
 		this.producer.setTransactionCheckListener(new TransactionCheckListener() {
 			public LocalTransactionState checkLocalTransactionState(MessageExt msg) {
@@ -30,17 +31,20 @@ public class MQProducer {
 				return LocalTransactionState.COMMIT_MESSAGE;
 			}
 		});
+
 		try {
 			this.producer.start();
 		} catch (MQClientException e) {
 			e.printStackTrace();
 		}	
 	}
-	
+
+	//3.0版本时的方法
 	public QueryResult queryMessage(String topic, String key, int maxNum, long begin, long end) throws Exception {
 		return this.producer.queryMessage(topic, key, maxNum, begin, end);
 	}
-	
+
+	//3.0版本时的方法
 	public LocalTransactionState check(MessageExt me){
 		LocalTransactionState ls = this.producer.getTransactionCheckListener().checkLocalTransactionState(me);
 		return ls;

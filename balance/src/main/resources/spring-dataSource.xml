@@ -54,7 +54,7 @@
         <property name="dataSource" ref="dataSource" />
         <property name="configLocation" value="classpath:mybatis-config.xml" />
         <!-- 自动扫描entity目录, 省掉Configuration.xml里的手工配置 -->
-        <property name="mapperLocations" value="classpath:bhz/mapper/*.xml" />
+        <property name="mapperLocations" value="classpath:mapper/*.xml" />
     </bean>
 
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
