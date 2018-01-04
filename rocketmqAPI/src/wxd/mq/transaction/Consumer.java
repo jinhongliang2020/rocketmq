@@ -11,9 +11,9 @@ import java.util.List;
 
 public class Consumer {
     public static void main(String[] args) throws MQClientException {
-        DefaultMQPushConsumer consumer = new DefaultMQPushConsumer("quickstart_consumer");
+        DefaultMQPushConsumer consumer = new DefaultMQPushConsumer("transaction_producer");
         consumer.setNamesrvAddr("192.168.0.121:9876;192.168.0.122:9876");
-        consumer.subscribe("TopicQuickStart","*");
+        consumer.subscribe("TopicTransaction","*");
 
         consumer.registerMessageListener(new MessageListenerConcurrently() {
             @Override
