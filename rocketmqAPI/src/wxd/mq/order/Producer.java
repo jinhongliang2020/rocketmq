@@ -28,7 +28,7 @@ public class Producer {
 
             DefaultMQProducer producer = new DefaultMQProducer(group_name);
 
-            producer.setNamesrvAddr("192.168.0.121:9786;192.168.0.122:9786");
+            producer.setNamesrvAddr("192.168.0.121:9876;192.168.0.122:9876");
 
             producer.start();
 
@@ -41,7 +41,7 @@ public class Producer {
 
             for (int i = 0; i < 5; i++){
                 //时间戳
-                String body = dateStr + " order_1" + i;
+                String body = dateStr + " order_1: " + i;
                 //参数： topic tag message
                 Message msg = new Message("TopicTest","order_1", "KEY" + i, body.getBytes());
                 //发送数据：如果使用顺序消费，则必须自己实现MessageQueueSelector，保证消息进入同一个队列中去。
@@ -56,9 +56,9 @@ public class Producer {
                 System.out.println(sendResult + ", body：" + body);
             }
 
-            for (int i = 0; i < 5; i++){
+            for (int i = 5; i < 10; i++){
                 //时间戳
-                String body = dateStr + " order_2 " + i;
+                String body = dateStr + " order_2: " + i;
                 //参数： topic tag message
                 Message msg = new Message("TopicTest","order_2", "KEY" + i, body.getBytes());
                 //发送数据：如果使用顺序消费，则必须自己实现MessageQueueSelector，保证消息进入同一个队列中去。
@@ -73,9 +73,9 @@ public class Producer {
                 System.out.println(sendResult + ", body：" + body);
             }
 
-            for (int i = 0; i < 5; i++){
+            for (int i = 10; i < 15; i++){
                 //时间戳
-                String body = dateStr + " order_3 " + i;
+                String body = dateStr + " order_3: " + i;
                 //参数： topic tag message
                 Message msg = new Message("TopicTest","order_3", "KEY" + i, body.getBytes());
                 //发送数据：如果使用顺序消费，则必须自己实现MessageQueueSelector，保证消息进入同一个队列中去。

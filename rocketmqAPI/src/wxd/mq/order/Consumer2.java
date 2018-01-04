@@ -14,9 +14,9 @@ import java.util.concurrent.TimeUnit;
 /**
  *  顺序消息消费。带事物方式（应用可控制Offset什么时候提交）
  */
-public class Consumer {
+public class Consumer2 {
 
-    public Consumer() throws Exception {
+    public Consumer2() throws Exception {
 
         String group_name = "order_producer";
 
@@ -58,7 +58,7 @@ public class Consumer {
     }
 
     public static void main(String[] args) throws Exception {
-        Consumer consumer = new Consumer();
+        Consumer2 consumer = new Consumer2();
     }
 }
 
