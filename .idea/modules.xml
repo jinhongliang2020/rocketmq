@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/balance/balance.iml" filepath="$PROJECT_DIR$/balance/balance.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pay/pay.iml" filepath="$PROJECT_DIR$/pay/pay.iml" />
       <module fileurl="file://$PROJECT_DIR$/rocketmq.iml" filepath="$PROJECT_DIR$/rocketmq.iml" />
       <module fileurl="file://$PROJECT_DIR$/rocketmqAPI/rocketmqAPI.iml" filepath="$PROJECT_DIR$/rocketmqAPI/rocketmqAPI.iml" />
     </modules>
